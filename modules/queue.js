@@ -36,4 +36,8 @@ export class Queue {
 
     return node.data;
   }
+
+  isEmpty() {
+    return (this.head === null) ? true : false;
+  }
 }
