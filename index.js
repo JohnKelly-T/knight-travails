@@ -69,6 +69,10 @@ function getValidMoves(x, y) {
   return validMoves;
 }
 
-console.log(getValidMoves(3, 3));
+let input = knightMoves([0,0],[7,7]);
 
-console.log(knightMoves([3,3],[4,3]));
+console.log("Congratulations! You made it in ", input.length - 1, "moves Here's your path:");
+
+for (let move of input) {
+  console.log(move);
+}
